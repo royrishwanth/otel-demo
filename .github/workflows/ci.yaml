@@ -5,13 +5,11 @@ on:
       - main
     paths:
       - 'src/product-catalog/**'
-      - 'kubernetes/productcatalog/**'
   pull_request:
     branches:
       - main
     paths:
       - 'src/product-catalog/**'
-      - 'kubernetes/productcatalog/**'
 jobs:
   build:
     runs-on: ubuntu-latest

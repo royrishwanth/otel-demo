@@ -87,5 +87,5 @@ jobs:
           git config --global user.name "Rishwanth Roy"
           git add kubernetes/productcatalog/deploy.yaml
           git commit -m "[CI]: Update Kubernetes manifest with new image tag "
-          git push origin head:main -f
+          git push origin HEAD:main -f
     

@@ -31,7 +31,9 @@ jobs:
             cd src/product-catalog
             go test -v ./...
       - name: Build the application
-        run: go build -o product-catalog-service main.go
+        run: |
+            cd src/product-catalog
+            go build -o product-catalog-service main.go
     
   code-quality:
       runs-on: ubuntu-latest
@@ -46,7 +48,7 @@ jobs:
           uses: golangci/golangci-lint-action@v6
           with:
             version: v1.55.2
-            run: goloangci/golangci-lint run 
+            run: golangci-lint run 
             working-directory: src/product-catalog
 
 
